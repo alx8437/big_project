@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    // куда собирает (если нет webpack)
+    "outDir": "./build/",
+    // Не позволяет использовать переменные без явного указания типов
+    "noImplicitAny": true,
+    // Указывает модульную систему
+    "module": "ESNext",
+    // В какую спецификацию компилируется, для поддержки большинством браузеров
+    "target": "es5",
+    // Позволяет писать jsx синтаксис
+    "jsx": "react",
+    // Компилятор будет обрабатывать не только .ts, но и .js файлы
+    "allowJs": true,
+    "moduleResolution": "node",
+    // esModuleInterop позволяет работать с пакетами common.js через import
+    "esModuleInterop": true,
+    // Если кака-либо библиотека не имеет default import,
+    // лоадеры вроде ts-loader или babel-loader автоматически создают их
+    // с allowSyntheticDefaultImports можно писать import React from ‘react’
+    // вместо import * as React from ‘react’
+    "allowSyntheticDefaultImports": true
+  },
+  // Настройка импортов модулей для ts-node
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
