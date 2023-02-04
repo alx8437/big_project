@@ -1,6 +1,5 @@
 import webpack from 'webpack';
 import { IBuildOptions } from "./types/configTypes";
-import path from "path";
 import { buildPlugins } from './buildPlugins';
 import { buildLoaders } from './buildLoaders';
 import { buildResolvers } from './buildResolvers';
