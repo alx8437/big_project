@@ -17,6 +17,9 @@
     "esModuleInterop": true,
     // Для абсолютного импорта
     "baseUrl": ".",
+    "path": {
+      "*": ["./src/*"]
+    },
     // Если кака-либо библиотека не имеет default import,
     // лоадеры вроде ts-loader или babel-loader автоматически создают их
     // с allowSyntheticDefaultImports можно писать import React from ‘react’
