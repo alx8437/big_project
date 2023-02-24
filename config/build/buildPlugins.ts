@@ -1,4 +1,3 @@
-import path from "path";
 import HTMLWebpackPlugin from 'html-webpack-plugin';
 import webpack from 'webpack';
 import { IBuildOptions } from "./types/configTypes";
