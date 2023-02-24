@@ -17,7 +17,7 @@
     "esModuleInterop": true,
     // Для абсолютного импорта
     "baseUrl": ".",
-    "path": {
+    "paths": {
       "*": ["./src/*"]
     },
     // Если кака-либо библиотека не имеет default import,
