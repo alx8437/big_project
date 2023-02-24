@@ -3,10 +3,8 @@ import {useTheme} from 'app/provider/ThemeProvider/lib/useTheme'
 import {Suspense} from 'react';
 import { AboutPage } from 'pages/AboutPage';
 import {MainPage} from "pages/MainPage";
-
 import './styles/index.scss';
-
-import {classnames} from "./helpers/classnames/classNames";
+import {classnames} from "helpers/classnames/classNames";
 
 const App = () => {
   const { toggleTheme, theme } = useTheme();
